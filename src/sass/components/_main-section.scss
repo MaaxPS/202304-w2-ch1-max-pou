@@ -4,36 +4,63 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 10px;
 
   padding: 30px 40px;
 
   &__perfume{
+    font-size: 12px;
     font-weight: 500;
     color: variables.$neutral-dark;
   }
 
   &__perfume-name{
+    font-size: 22px;
     font-weight: 700;
     font-family: variables.$title-font;
   }
 
   &__perfume-description{
-    font-weight: 700;
+    margin: 5px 0;
+    font-weight: 500;
     color: variables.$neutral-dark;
-    font-size: 14px;
+    font-size: 12px;
   }
 
-  &__price-container :nth-child(2){
-    color: variables.$neutral-dark;
-    text-decoration: line-through;
+  &__price-container {
+    display: flex;
+    gap:10px;
+    align-items: center;
+
+    & :nth-child(1){
+      color: variables.$primary-dark;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: variables.$title-font;
+    } 
+
+    & :nth-child(2){
+      color: variables.$neutral-dark;
+      text-decoration: line-through;
+      font-size: 12px;
+    } 
   }
 
   &__cart-button{
     color: variables.$neutral-white;
     background-color: variables.$primary-dark;
-    font-size: 10px;
+    font-weight: 700;
+    font-size: 12px;
     padding: 10px 0;
     border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    & span{
+    }
   }
 
 }
