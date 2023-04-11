@@ -21,11 +21,21 @@
 }
 
 @media (min-width: 768px){
+  body{
+    display: flex;
+    justify-content: center;
+  }
   .main-container{
+    width: 500px;
+    flex-direction: row;
+    margin: 125px 300px;
+
     & picture :first-child{
       display:none;
     }
     & picture :nth-child(2){
+      border-top-right-radius: 0%;
+      border-bottom-left-radius: 20px;
       object-fit: cover;
       display: block;
     }
